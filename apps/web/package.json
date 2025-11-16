@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@repo/constant": "workspace:*",
+    "@unhead/vue": "^2.0.19",
     "@vueuse/core": "catalog:frontend",
     "nprogress": "catalog:frontend",
     "pinia": "catalog:frontend",
@@ -25,7 +26,7 @@
   "devDependencies": {
     "@repo/tailwind-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
-    "@repo/vite-config": "workspace:*",
+    "@tailwindcss/vite": "^4.1.17",
     "@tsconfig/node22": "catalog:types",
     "@types/node": "catalog:types",
     "@types/nprogress": "catalog:types",
@@ -36,7 +37,13 @@
     "npm-run-all2": "catalog:build",
     "tailwindcss": "catalog:build",
     "typescript": "catalog:dev",
+    "unplugin-auto-import": "catalog:build",
+    "unplugin-vue-components": "catalog:build",
+    "unplugin-vue-markdown": "catalog:build",
+    "unplugin-vue-router": "catalog:build",
     "vite": "catalog:build",
+    "vite-plugin-beasties": "catalog:build",
+    "vite-plugin-vue-devtools": "catalog:build",
     "vue-tsc": "catalog:dev"
   }
 }

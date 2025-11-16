@@ -4,18 +4,13 @@
       <nav class="py-4">
         <ul class="flex">
           <li>
-            <router-link to="/home">
-              Home
+            <router-link to="/blog">
+              Blog
             </router-link>
           </li>
           <li>
             <router-link to="/about">
               About
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/tags">
-              Tags
             </router-link>
           </li>
         </ul>

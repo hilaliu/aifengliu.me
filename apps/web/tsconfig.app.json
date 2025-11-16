@@ -4,12 +4,17 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@contents/*": [
+        "./contents/*"
       ]
-    }
+    },
+    "types": ["unplugin-vue-router/client"]
   },
   "include": [
     "src/**/*",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/types/vue-router.d.ts"
   ],
   "exclude": [
     "node_modules"

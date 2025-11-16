@@ -14,6 +14,7 @@ catalogs:
     unplugin-auto-import: ^20.2.0
     unplugin-vue-components: ^30.0.0
     unplugin-vue-markdown: ^29.2.0
+    unplugin-vue-router: ^0.17.0
     vite: ^7.0.6
     vite-plugin-beasties: ^0.3.5
     vite-plugin-vue-devtools: ^8.0.3

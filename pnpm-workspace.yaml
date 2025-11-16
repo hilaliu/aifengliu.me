@@ -34,6 +34,7 @@ catalogs:
     vue-tsc: ^3.0.4
 
   frontend:
+    '@unhead/vue': ^2.0.19
     '@vueuse/core': ^14.0.0
     nprogress: ^0.2.0
     pinia: ^3.0.3

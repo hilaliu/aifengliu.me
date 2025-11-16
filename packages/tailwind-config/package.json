@@ -1,0 +1,14 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.20.0",
+  "exports": {
+    ".": "./tailwind.css"
+  },
+  "devDependencies": {
+    "@iconify/json": "catalog:build",
+    "@iconify/tailwind4": "catalog:build",
+    "tailwindcss": "catalog:build"
+  }
+}

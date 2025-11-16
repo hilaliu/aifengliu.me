@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "./base.json",
+    "@vue/tsconfig/tsconfig.dom.json"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+    "types": [
+      "vite/client"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@repo/vite-config",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.20.0",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "@tailwindcss/vite": "catalog:build",
+    "@vitejs/plugin-vue": "catalog:build",
+    "vite": "catalog:build"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "catalog:types",
+    "typescript": "catalog:dev",
+    "unplugin-auto-import": "catalog:build",
+    "unplugin-vue-components": "catalog:build",
+    "unplugin-vue-markdown": "catalog:build",
+    "vite-plugin-beasties": "catalog:build",
+    "vite-plugin-vue-devtools": "catalog:build"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "./base.json",
+    "@tsconfig/node22/tsconfig.json"
+  ],
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "moduleDetection": "force",
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "types": [
+      "node"
+    ]
+  }
+}

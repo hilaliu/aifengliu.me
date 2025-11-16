@@ -1,0 +1,42 @@
+{
+  "name": "@repo/web",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@repo/constant": "workspace:*",
+    "@vueuse/core": "catalog:frontend",
+    "nprogress": "catalog:frontend",
+    "pinia": "catalog:frontend",
+    "vue": "catalog:frontend",
+    "vue-router": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@repo/tailwind-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
+    "@repo/vite-config": "workspace:*",
+    "@tsconfig/node22": "catalog:types",
+    "@types/node": "catalog:types",
+    "@types/nprogress": "catalog:types",
+    "@vitejs/plugin-vue": "catalog:build",
+    "@vue/tsconfig": "catalog:types",
+    "eslint": "catalog:dev",
+    "jiti": "catalog:build",
+    "npm-run-all2": "catalog:build",
+    "tailwindcss": "catalog:build",
+    "typescript": "catalog:dev",
+    "vite": "catalog:build",
+    "vue-tsc": "catalog:dev"
+  }
+}

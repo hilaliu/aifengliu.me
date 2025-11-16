@@ -1,0 +1,21 @@
+{
+  "name": "@repo/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.20.0",
+  "author": "Liu aifeng",
+  "keywords": [
+    "eslint",
+    "vue3",
+    "monorepo",
+    "eslint-config"
+  ],
+  "exports": {
+    ".": "./common.js"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:dev",
+    "typescript": "catalog:dev"
+  }
+}

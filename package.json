@@ -1,0 +1,42 @@
+{
+  "name": "aifengliu.me",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.20.0",
+  "description": "",
+  "author": "Liu aifeng",
+  "license": "MIT",
+  "keywords": [
+    "vue3",
+    "monorepo",
+    "eslint"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @repo/web dev",
+    "build": "pnpm --filter @repo/web build",
+    "preinstall": "husky",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "catalog:dev",
+    "@commitlint/config-conventional": "catalog:dev",
+    "@repo/eslint-config": "workspace:*",
+    "@types/node": "catalog:types",
+    "commitizen": "catalog:dev",
+    "commitlint": "catalog:dev",
+    "cz-git": "catalog:dev",
+    "eslint": "catalog:dev",
+    "husky": "catalog:dev",
+    "lint-staged": "catalog:dev"
+  },
+  "lint-staged": {
+    "{apps/**/*.{ts,vue,js},packages/**/*.{ts,vue,js}}": [
+      "eslint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}

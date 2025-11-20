@@ -14,12 +14,17 @@ const tags = router.getRoutes().filter(route => (route.path.startsWith('/posts/'
     <h1 class="text-2xl font-bold">
       Tags
     </h1>
-    <div class="flex gap-2 flex-wrap">
+    <div v-if="tags.size > 0" class="flex gap-2 flex-wrap">
       <div v-for="tag in Array.from(tags)" :key="tag">
         <router-link :to="`/tags/${tag}`" class="nav-link mx-0!">
           #{{ tag }}
         </router-link>
       </div>
+    </div>
+    <div v-else>
+      <p class="text-gray-400">
+        No tags found
+      </p>
     </div>
   </div>
 </template>

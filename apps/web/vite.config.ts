@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import { fileURLToPath, URL } from 'node:url'
 import { SITE_NAME } from '@repo/constant'
 import Shiki from '@shikijs/markdown-it'
+import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationWordHighlight } from '@shikijs/transformers'
 import slugify from '@sindresorhus/slugify'
 import Tailwindcss from '@tailwindcss/vite'
 import Vue from '@vitejs/plugin-vue'
@@ -50,9 +51,13 @@ export default defineConfig(() => {
         exposeExcerpt: false,
         async markdownItSetup(md) {
           md.use(await Shiki({
-            themes: {
-              light: 'vitesse-light',
-            },
+            theme: 'vitesse-light',
+            transformers: [
+              transformerNotationDiff(),
+              transformerNotationFocus(),
+              transformerNotationHighlight(),
+              transformerNotationWordHighlight(),
+            ],
           }))
 
           md.use(anchor, {

@@ -12,6 +12,13 @@ const posts = router.getRoutes().filter(route => (route.path.startsWith('/posts/
 
 <template>
   <div>
-    <PostItem v-for="post in posts" :key="post.title" :post="post" />
+    <div v-if="posts.length > 0">
+      <PostItem v-for="post in posts" :key="post.title" :post="post" />
+    </div>
+    <div v-else>
+      <p class="text-gray-400">
+        No posts found
+      </p>
+    </div>
   </div>
 </template>

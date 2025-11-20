@@ -29,6 +29,7 @@
   "devDependencies": {
     "@repo/theme": "workspace:*",
     "@repo/tsconfig": "workspace:*",
+    "@shikijs/transformers": "^3.15.0",
     "@tailwindcss/vite": "catalog:build",
     "@tsconfig/node22": "catalog:types",
     "@types/node": "catalog:types",

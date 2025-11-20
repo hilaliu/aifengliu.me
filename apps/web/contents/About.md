@@ -5,16 +5,15 @@ display: false
 
 # Hilary Liu
 
-```typescript
-import Shiki from '@shikijs/markdown-it'
-import MarkdownIt from 'markdown-it'
+```ts
+const Me = {
+  Name: 'Hilary Liu',
+  Where: 'cheng du', // [!code --]
+  Where: 'guang dong', // [!code ++]
+  Email: '2788370451@qq.com',
+  Github: 'https://github.com/GodlessLiu',
+  Hobby: ['coding', 'pingpang', 'running']
+}
 
-const md = MarkdownIt()
-
-md.use(await Shiki({
-  themes: {
-    light: 'vitesse-light',
-    dark: 'vitesse-dark',
-  }
-}))
+console.log('Hello, nice to meet u!!!')
 ```

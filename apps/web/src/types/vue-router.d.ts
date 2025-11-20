@@ -44,20 +44,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/README': RouteRecordInfo<
-      '/posts/README',
-      '/posts/README',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/posts/README1': RouteRecordInfo<
-      '/posts/README1',
-      '/posts/README1',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
     '/tags/': RouteRecordInfo<
       '/tags/',
       '/tags',
@@ -100,18 +86,6 @@ declare module 'vue-router/auto-routes' {
     'contents/posts/index.md': {
       routes:
         | '/posts/'
-      views:
-        | never
-    }
-    'contents/posts/README.md': {
-      routes:
-        | '/posts/README'
-      views:
-        | never
-    }
-    'contents/posts/README1.md': {
-      routes:
-        | '/posts/README1'
       views:
         | never
     }

@@ -12,7 +12,6 @@ import AutoComponents from 'unplugin-vue-components/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
-import { beasties } from 'vite-plugin-beasties'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
@@ -86,7 +85,6 @@ export default defineConfig(() => {
         dts: `${srcPath}/types/components.d.ts`,
       }),
       VueDevTools(),
-      beasties(),
       Tailwindcss(),
       createHtmlPlugin({
         inject: {

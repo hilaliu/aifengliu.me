@@ -3,7 +3,7 @@ const router = useRouter()
 
 const tags = router.getRoutes().filter(route => (route.path.startsWith('/posts/'))).reduce((acc, route) => {
   route.meta.frontmatter?.tags?.forEach((tag) => {
-    acc.add(tag.toUpperCase())
+    acc.add(tag)
   })
   return acc
 }, new Set<string>())

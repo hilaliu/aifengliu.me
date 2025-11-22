@@ -8,8 +8,8 @@ display: false
 ```ts
 const Me = {
   Name: 'Hilary Liu',
-  Where: 'cheng du', // [!code --]
-  Where: 'guang dong', // [!code ++]
+  Where: 'Cheng du', // [!code --]
+  Where: 'Guang dong', // [!code ++]
   Email: '2788370451@qq.com',
   Github: 'https://github.com/GodlessLiu',
   Hobby: ['coding', 'pingpang', 'running']

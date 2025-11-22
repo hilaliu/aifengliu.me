@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { formatDate } from '@/utils'
+
 const { frontmatter } = defineProps<{
   frontmatter: {
     title: string
@@ -18,7 +20,7 @@ const { frontmatter } = defineProps<{
       </h1>
       <div class="flex items-center">
         <time v-if="frontmatter.date" class="text-sm text-gray-500 mr-2">
-          Posted on {{ frontmatter.date }}
+          Posted on {{ formatDate(frontmatter.date) }}
         </time>
         <div v-if="frontmatter.tags?.length > 0">
           <router-link v-for="tag in frontmatter.tags" :key="tag" :to="`/tags/${tag}`" class="nav-link mx-1!">

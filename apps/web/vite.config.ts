@@ -78,6 +78,7 @@ export default defineConfig(() => {
         dirs: [
           `${srcPath}/composables`,
           `${srcPath}/stores`,
+          `${srcPath}/utils`,
         ],
         dts: `${srcPath}/types/auto-imports.d.ts`,
       }),

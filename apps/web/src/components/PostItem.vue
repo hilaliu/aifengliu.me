@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Post } from '@/types'
+import { formatDate } from '@/utils'
 
 const { post } = defineProps<{
   post: Post
@@ -12,8 +13,8 @@ const { post } = defineProps<{
       {{ post.title }}
     </h2>
     <div class="flex gap-1 items-center flex-wrap">
-      <time class="text-sm text-gray-500 mr-2">
-        Posted on {{ post.date }}
+      <time class="text-xs text-gray-500">
+        {{ formatDate(post.date) }}
       </time>
       <div>
         <router-link v-for="tag in post.tags" :key="tag" :to="`/tags/${tag}`" class="nav-link mx-1!">

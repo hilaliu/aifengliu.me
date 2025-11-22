@@ -300,17 +300,13 @@ h6:focus .header-anchor {
 }
 
 /* Diff lines (transformerNotationDiff) */
-.prose .shiki .line.diff.add {
-  background-color: #e6ffed;
-}
-
 .prose .shiki .line.diff.add::before {
   position: absolute;
   content: '+';
 }
 
 .prose .shiki .line.diff.remove {
-  background-color: #ffeef0;
+  opacity: 0.5;
 }
 
 .prose .shiki .line.diff.remove::before {

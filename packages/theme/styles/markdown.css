@@ -75,10 +75,12 @@ html:not(.dark) .shiki span {
   text-decoration: none;
   border-bottom: 1px solid rgba(125, 125, 125, 0.3);
   transition: border 0.3s ease-in-out;
+  color: var(--color-gray-400);
 }
 
 .prose a:hover {
   border-bottom: 1px solid var(--fg);
+  color: #000;
 }
 
 .prose a code {
@@ -312,6 +314,10 @@ h6:focus .header-anchor {
 .prose .shiki .line.diff.remove::before {
   position: absolute;
   content: '-';
+}
+
+.prose a::after {
+  content: '↗';
 }
 
 /* Highlight lines (transformerNotationHighlight) */

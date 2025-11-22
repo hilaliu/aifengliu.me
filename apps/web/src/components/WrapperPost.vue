@@ -18,7 +18,7 @@ const { frontmatter } = defineProps<{
       <h1 v-if="frontmatter.title" class="text-4xl font-bold mb-1">
         {{ frontmatter.title }}
       </h1>
-      <div class="flex items-center">
+      <div class="flex items-center flex-wrap">
         <time v-if="frontmatter.date" class="text-sm text-gray-500 mr-2">
           Posted on {{ formatDate(frontmatter.date) }}
         </time>

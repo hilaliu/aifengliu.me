@@ -68,6 +68,11 @@ html.dark .shiki span {
   color: #000;
 }
 
+html.dark .prose a:hover {
+  border-bottom: 1px solid var(--fg-deep);
+  color: #fff;
+}
+
 .prose a code {
   color: inherit;
 }

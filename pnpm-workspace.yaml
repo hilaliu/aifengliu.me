@@ -8,7 +8,12 @@ catalogs:
     '@iconify/tailwind4': ^1.0.6
     '@tailwindcss/vite': ^4.1.16
     '@vitejs/plugin-vue': ^6.0.1
+    fast-glob: ^3.3.3
+    feed: ^5.1.0
+    fs-extra: ^11.3.2
+    gray-matter: ^4.0.3
     jiti: ^2.4.2
+    markdown-it: ^14.1.0
     npm-run-all2: ^8.0.4
     tailwindcss: 4.1.16
     unplugin-auto-import: ^20.2.0

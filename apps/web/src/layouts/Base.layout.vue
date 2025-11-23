@@ -27,7 +27,12 @@ const navs = [
           </li>
         </ul>
       </nav>
-      <ToggleTheme />
+      <div>
+        <a href="/feed.xml" target="_blank">
+          <span class="icon-[fluent--rss-24-regular] w-5 h-5" />
+        </a>
+        <ToggleTheme />
+      </div>
     </header>
     <div class="mx-auto max-w-3xl mb-16 px-2">
       <router-view />

@@ -14,6 +14,7 @@
   "scripts": {
     "dev": "pnpm --filter @repo/web dev",
     "build": "node scripts/build.js",
+    "rss": "node scripts/rss.js",
     "preinstall": "husky",
     "cz": "git-cz"
   },
@@ -26,8 +27,13 @@
     "commitlint": "catalog:dev",
     "cz-git": "catalog:dev",
     "eslint": "catalog:dev",
+    "fast-glob": "catalog:build",
+    "feed": "catalog:build",
+    "fs-extra": "catalog:build",
+    "gray-matter": "catalog:build",
     "husky": "catalog:dev",
-    "lint-staged": "catalog:dev"
+    "lint-staged": "catalog:dev",
+    "markdown-it": "catalog:build"
   },
   "lint-staged": {
     "{apps/**/*.{ts,vue,js},packages/**/*.{ts,vue,js}}": [

@@ -41,6 +41,9 @@ async function main() {
   console.log('==> 构建 @repo/web...')
   await run('pnpm', ['-C', webPath, 'build'])
 
+  console.log('==> 构建 RSS...')
+  await run('node', ['scripts/rss.js'])
+
   console.log('✅ 全部构建完成')
 }
 

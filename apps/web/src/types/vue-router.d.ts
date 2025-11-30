@@ -51,6 +51,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/how-to-use-codeceptjs': RouteRecordInfo<
+      '/posts/how-to-use-codeceptjs',
+      '/posts/how-to-use-codeceptjs',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/tags/': RouteRecordInfo<
       '/tags/',
       '/tags',
@@ -99,6 +106,12 @@ declare module 'vue-router/auto-routes' {
     'contents/posts/how-i-manage-my-blog.md': {
       routes:
         | '/posts/how-i-manage-my-blog'
+      views:
+        | never
+    }
+    'contents/posts/how-to-use-codeceptjs.md': {
+      routes:
+        | '/posts/how-to-use-codeceptjs'
       views:
         | never
     }

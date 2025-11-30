@@ -1,8 +1,8 @@
 ---
 title: How do I manage my blog
 date: 2025-11-22
-description: This article is about how I developed and deployed my blog. Through this article, you will learn how to quickly develop a blog site with CloudFlare and Vue
-tags: ["Vue", "Cloudflare"]
+description: In this post, I share the process of developing a blog that supports Markdown writing using front-end technology stacks such as Vue3+Vite+TypeScript, and completing automatic deployment and launch by linking the Git repository and configuring build parameters via CloudFlare Pages.
+tags: ["Frontend", "Cloudflare"]
 ---
 
 This post is about how I developed and deployed my blog, and I will mainly focus on the following two points:
